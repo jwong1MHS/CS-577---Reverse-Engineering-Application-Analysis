@@ -1,0 +1,7 @@
+Jason Wong
+
+0040061c – calls the scanf function for user input
+00400621 – moves the argument to child function (scanf) and is stored to rdi
+00400628 – moves the value of 0 to eax (because there are 0 vector registers that are passed to printf)
+0040062d – calls the printf function
+00400632 – the value in RAX is written to a variable called local_18, and the address of RPB-0x10 is wrritten to the address of RAX
