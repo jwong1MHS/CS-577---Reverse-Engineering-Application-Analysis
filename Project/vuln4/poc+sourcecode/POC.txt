@@ -1,0 +1,23 @@
+To trigger double-free vulnerability -->
+./binary4
+A
+1
+(some caesar cipher shift of string CONVERT where the shift is randomized (based on localtime actually)) 
+3
+3
+
+To trigger use-after-free vulnerability -->
+./binary4
+A
+1
+(some caesar cipher shift of string CONVERT where the shift is randomized (based on localtime actually)) 
+3
+2
+YES
+
+To trigger undeclared variable vulnerability -->
+./binary4
+A
+1
+(some caesar cipher shift of string CONVERT where the shift is randomized (based on localtime actually)) 
+6
